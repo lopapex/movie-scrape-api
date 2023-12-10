@@ -1,0 +1,16 @@
+{
+   "compilerOptions": {
+     "target": "es6",
+     "module": "commonjs",
+     "rootDir": "src",
+     "outDir": "dist",
+     "strict": true,
+     "esModuleInterop": true,
+     "forceConsistentCasingInFileNames": true,
+     "noImplicitReturns": true,
+     "noImplicitThis": true,
+     "lib": ["dom", "es2017", "esnext.asynciterable"]
+   },
+   "include": ["src/**/*.ts"],
+   "exclude": ["node_modules", "**/*.spec.ts"]
+ }
