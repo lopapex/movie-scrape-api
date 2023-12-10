@@ -1,0 +1,34 @@
+{
+  "name": "movie-scrape-api",
+  "version": "1.0.0",
+  "description": "API for scraping famoust pop culture pages, such as ČSVF, Kinobox and Rotten Tomato",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lopapex/movie-scrape-api.git"
+  },
+  "keywords": [
+    "Movie",
+    "TV",
+    "Series",
+    "Pop",
+    "culture",
+    "ČSFT",
+    "Kinobox",
+    "Rotten",
+    "tomato"
+  ],
+  "author": "Matěj Novotný",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lopapex/movie-scrape-api/issues"
+  },
+  "homepage": "https://github.com/lopapex/movie-scrape-api#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "typescript": "^5.3.3"
+  }
+}
