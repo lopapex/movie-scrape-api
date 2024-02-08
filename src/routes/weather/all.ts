@@ -34,4 +34,4 @@ const weatherData: WeatherData[] = [
   },
 ]
 
-export default (_req: Request, res: Response<WeatherData[]>) => res.send(weatherData)
+export default (_req: Request, res: Response<WeatherData[]>) => res.status(200).send(weatherData)

@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express'
+import express, { NextFunction, Request, Response } from 'express'
 import routes from './routes'
 
 const app = express()
@@ -6,7 +6,8 @@ const port = process.env.PORT || 3978
 
 app.use('/api/', routes)
 
-app.use((err: Error, _req: Request, res: Response) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+app.use((err: Error, _req: Request, res: Response, _next: NextFunction): void => {
   res.status(400).json({
     success: false,
     message: err.message || 'An error occured.',
@@ -14,7 +15,8 @@ app.use((err: Error, _req: Request, res: Response) => {
   })
 })
 
-app.use((_req: Request, res: Response) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+app.use((err: Error, _req: Request, res: Response, _next: NextFunction): void => {
   res.status(404).json({ success: false, message: 'Resource not found.' })
 })
 
