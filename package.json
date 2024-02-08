@@ -1,10 +1,12 @@
 {
   "name": "movie-scrape-api",
   "version": "1.0.0",
-  "description": "API for scraping famoust pop culture pages, such as ČSVF, Kinobox and Rotten Tomato",
+  "description": "API for scraping famous pop culture pages, such as ČSFD, Kinobox and Rotten Tomato",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "start": "node dist/index.js",
+    "build": "tsc",
     "lint": "eslint . --ext .js,.ts",
     "lint-fix": "eslint . --ext .js,.ts --fix",
     "format": "prettier --write ."
@@ -19,7 +21,7 @@
     "Series",
     "Pop",
     "culture",
-    "ČSFT",
+    "ČSFD",
     "Kinobox",
     "Rotten",
     "tomato"

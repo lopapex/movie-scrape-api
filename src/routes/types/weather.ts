@@ -1,5 +1,5 @@
 export type WeatherData = {
-  city: string;
-  temperature: number;
-  chanceOfRain: number;
-};
+  city: string
+  temperature: number
+  chanceOfRain: number
+}

@@ -1,38 +1,37 @@
-import { WeatherData } from "../types/weather";
-import { Request, Response } from "express";
+import { WeatherData } from '../types/weather'
+import { Request, Response } from 'express'
 
 const weatherData: WeatherData[] = [
   {
-    city: "Brno",
+    city: 'Brno',
     temperature: 14,
     chanceOfRain: 5,
   },
   {
-    city: "Prague",
+    city: 'Prague',
     temperature: 16,
     chanceOfRain: 20,
   },
   {
-    city: "Bratislava",
+    city: 'Bratislava',
     temperature: 13,
     chanceOfRain: 20,
   },
   {
-    city: "London",
+    city: 'London',
     temperature: 13,
     chanceOfRain: 10,
   },
   {
-    city: "Vienna",
+    city: 'Vienna',
     temperature: 15,
     chanceOfRain: 0,
   },
   {
-    city: "Paris",
+    city: 'Paris',
     temperature: 22,
     chanceOfRain: 0,
   },
-];
+]
 
-export default (_req: Request, res: Response<WeatherData[]>) =>
-  res.send(weatherData);
+export default (_req: Request, res: Response<WeatherData[]>) => res.send(weatherData)
